@@ -77,9 +77,9 @@ footer p {
 
 .main {
   background: url("../images/your_verse_hero.jpg") 50% 100% / 1440px 1315px no-repeat;
-  background-size: cover;
+  background-size: 130%;
   width: 100%;
-  height: 700px;
+  height: 600px;
 }
 
 .main .headings {
@@ -106,4 +106,81 @@ footer p {
 
 header {
   position: absolute;
+  width: 100%;
+}
+
+.menu {
+  margin: 20px auto;
+  width: 1000px;
+  height: 50px;
+  display: flex;
+}
+
+.menu li:hover {
+  background: linear-gradient(to bottom, rgba(99,99,99,1) 0%, rgba(117,117,117,1) 12%, rgba(133,133,133,1) 25%, rgba(94,94,94,1) 39%, rgba(56,56,56,1) 50%, rgba(0,0,0,1) 51%, rgba(23,23,23,1) 60%, rgba(56,56,56,1) 76%, rgba(36,36,36,1) 91%, rgba(23,23,23,1) 100%);
+}
+
+.menu li:not(:last-child) {
+  border-right: 1px solid #aaa;
+}
+
+.menu li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: 1px solid #555;
+}
+
+.menu li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: 1px solid #555;
+}
+
+.menu li {
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  background: linear-gradient(to bottom, rgba(120,120,120,1) 0%, rgba(140,140,140,1) 12%, rgba(161,161,161,1) 25%, rgba(112,112,112,1) 39%, rgba(69,69,69,1) 50%, rgba(0,0,0,1) 51%, rgba(28,28,28,1) 60%, rgba(69,69,69,1) 76%, rgba(43,43,43,1) 91%, rgba(28,28,28,1) 100%);
+  width: 100%;
+  height: 100%;
+  line-height: 47px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.menu input[type="text"] {
+  width: 80%;
+  margin: 0 10%;
+  padding: 0 10%;
+  height: 20px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.75);
+  background: #aaa url("../images/glass.svg") 5px 50% / 13px 11`px no-repeat;
+  border-radius: 10px;
+}
+
+.menu input[type="text"]:focus {
+  background-color: #fff;
+  background-image: none;
+  outline: none;
+}
+
+.menu .logo a:before {
+  content: "";
+  background: url("../images/globalnav_text.svg") 50% 10px no-repeat;
+  height: 40px;
+  width: 100%;
+  display: inline-block;
+}
+
+.menu .logo span {
+  display: none;
 }
